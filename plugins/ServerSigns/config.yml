@@ -1,0 +1,17 @@
+blocks:
+- 68
+- 63
+language: en
+messageTag: '&2[Sign]'
+messageColour: '&e'
+vault_grant: true
+permission_console_command_add: manuaddp <player> <permission>
+permission_console_command_remove: manudelp <player> <permission>
+must_be_sneaking_to_destroy: true
+show_funds_removed_message: true
+currency: dollars
+broadcastDevelopers: true
+automaticUpdateChecks: true
+disableConsoleCommandLogging: false
+allowLeftClicking: true
+listen_on_redstone: false
