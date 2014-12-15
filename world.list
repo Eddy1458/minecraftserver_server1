@@ -1,0 +1,7 @@
+#Worlds currently existing
+#Add or remove so we can create and delete them freely for plugins/other
+
+IslandWorld
+plotworld
+world_nether
+world_the_end
