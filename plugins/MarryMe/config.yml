@@ -1,0 +1,9 @@
+# Thanks for downloading this plugin.
+# You define how many hits are neccessary to be separated from your Minecraft Partner
+# Set it to 0 to disable the separation.
+# Else set the 'hitsToSeparation' to an amount you like.
+# www.LostForce.com
+MarryMe:
+  hitsToSeparation: 10
+  Commands:
+    give: true
