@@ -1,0 +1,483 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Owner:
+    default: false
+    permissions:
+    - -vanish.*
+    - '*'
+    - BungeePortals.portal.kitpvp
+    inheritance:
+    - co-owner
+    info:
+      prefix: '&6[&eOwner&6]'
+      build: true
+      suffix: ''
+  Member:
+    default: true
+    permissions:
+    - BungeePortals.portal.kitpvp
+    - essentials.marry
+    - essentials.marry.accept
+    - marry.accept
+    - marry.marry
+    - paintball.join
+    - plotme.*
+    - plotme.home
+    - plotme.use
+    - plotworld
+    - serversigns.use
+    inheritance:
+    - g:essentials_builder
+    - g:towny_builder
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&2[Member] &2'
+      build: true
+      suffix: ''
+  Mod:
+    default: false
+    permissions: []
+    inheritance: []
+    info:
+      prefix: '&9[Mod]'
+      build: false
+      suffix: ''
+  VIPgold:
+    default: false
+    permissions:
+    - +essentials.signs.use.heal
+    - essentials.afk.kickexempt
+    - essentials.balance.others
+    - essentials.ban.notify
+    - essentials.book
+    - essentials.book.others
+    - essentials.book.title
+    - essentials.broadcast
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.chat.magic
+    - essentials.chat.url
+    - essentials.clearinventory
+    - essentials.compass
+    - essentials.depth
+    - essentials.exp
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.getpos
+    - essentials.getpos.others
+    - essentials.hat
+    - essentials.ignore
+    - essentials.jump
+    - essentials.kick.notify
+    - essentials.me
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.mute.notify
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.powertool
+    - essentials.powertooltoggle
+    - essentials.ptime
+    - essentials.realname
+    - essentials.recipe
+    - essentials.seen.banreason
+    - essentials.sethome.multiple.7
+    - essentials.signs.break.mail
+    - essentials.signs.break.protection
+    - essentials.signs.break.trade
+    - essentials.signs.create.mail
+    - essentials.signs.create.protection
+    - essentials.signs.create.trade
+    - essentials.time
+    - essentials.whois
+    - essentials.workbench
+    - essentials.worth
+    - serversigns.use
+    - warps.sheepcowcar
+    inheritance:
+    - g:essentials_builder
+    - g:towny_builder
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&a&lV.&b&lI.&c&lP. &6'
+      build: true
+      suffix: ' &r&6&lGolden'
+  deleteme:
+    default: false
+    permissions: []
+    inheritance: []
+    info:
+      prefix: ''
+      build: false
+      suffix: ''
+  VIPiron:
+    default: false
+    permissions:
+    - +essentials.signs.use.heal
+    - essentials.balance.others
+    - essentials.ban.notify
+    - essentials.chat.color
+    - essentials.compass
+    - essentials.kick.notify
+    - essentials.me
+    - essentials.msg.color
+    - essentials.mute.notify
+    - essentials.realname
+    - essentials.sethome.multiple.2
+    - essentials.signs.break.trade
+    - essentials.signs.create.trade
+    - essentials.time
+    - essentials.worth
+    - serversigns.use
+    - warps.pigcar
+    - warps.sheepcowcar
+    inheritance:
+    - g:essentials_builder
+    - g:towny_builder
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&a&lV.&b&lI.&c&lP. &8'
+      build: true
+      suffix: ' &r&8&lIron'
+  Operator:
+    default: false
+    permissions:
+    - '*'
+    - essentials.bal
+    - essentials.money
+    inheritance: []
+    info:
+      '&8&l[&b&lOperator&8&l]': '&b&l&o'
+      prefix: '&8&l&o[&b&l&oOperator&8&l&o] &b&l&o'
+      build: false
+      suffix: ''
+  ServerConsole:
+    default: false
+    permissions: []
+    inheritance: []
+    info:
+      prefix: ''
+      build: false
+      suffix: ''
+  DOF:
+    default: false
+    permissions: []
+    inheritance: []
+    info:
+      prefix: '&0&l[&d&l+&0&l]&8&l[&d&k!&6&lDirectorOfStaff&d&k!&8&l]'
+      build: false
+      suffix: ''
+  list:
+    default: false
+    permissions: []
+    inheritance: []
+    info:
+      prefix: ''
+      build: false
+      suffix: ''
+  VIPdiamond:
+    default: false
+    permissions:
+    - +essentials.signs.use.heal
+    - essentials.afk.kickexempt
+    - essentials.balance.others
+    - essentials.ban.notify
+    - essentials.book
+    - essentials.book.others
+    - essentials.book.title
+    - essentials.broadcast
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.chat.magic
+    - essentials.chat.url
+    - essentials.clearinventory
+    - essentials.compass
+    - essentials.depth
+    - essentials.exp
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.gamemode
+    - essentials.getpos
+    - essentials.getpos.others
+    - essentials.hat
+    - essentials.ignore
+    - essentials.itemdb
+    - essentials.jump
+    - essentials.kick.notify
+    - essentials.me
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.magic
+    - essentials.mute.notify
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.powertool
+    - essentials.powertooltoggle
+    - essentials.protect
+    - essentials.ptime
+    - essentials.realname
+    - essentials.recipe
+    - essentials.seen.banreason
+    - essentials.seen.extra
+    - essentials.sethome.multiple
+    - essentials.signs.break.mail
+    - essentials.signs.break.protection
+    - essentials.signs.create.mail
+    - essentials.signs.create.protection
+    - essentials.time
+    - essentials.whois
+    - essentials.workbench
+    - essentials.worth
+    - serversigns.use
+    - warps.mcmakerscar
+    - warps.pigcar
+    - warps.sheepcowcar
+    inheritance:
+    - g:essentials_builder
+    - g:towny_builder
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&a&lV.&b&lI.&c&lP. &3'
+      build: true
+      suffix: ' &r&3&lDiamond'
+  YouTube:
+    default: false
+    permissions:
+    - essentials.fly
+    - essentials.tp
+    inheritance: []
+    info:
+      prefix: ''
+      build: false
+      suffix: ''
+  Server:
+    default: false
+    permissions: []
+    inheritance: []
+    info:
+      '&d[Server]': owner 999
+      prefix: ''
+      build: false
+      suffix: ''
+  Admin:
+    default: false
+    permissions:
+    - essentials,wand
+    - essentials.wand
+    - essentials.worldedit
+    - magicwand.*
+    - worldedit.wand
+    inheritance:
+    - moderator
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:towny_admin
+    - g:vanish_admin
+    info:
+      prefix: '&0&l[&4&lAdmin&0&l] &4&l'
+      build: true
+      suffix: ''
+  Test:
+    default: false
+    permissions: []
+    inheritance: []
+    info:
+      prefix: ''
+      build: false
+      suffix: ''
+  Co-owner:
+    default: false
+    permissions:
+    - '*'
+    - worldedit.*
+    inheritance:
+    - head-admin
+    info:
+      prefix: '&6&l[&b&lCo-Owner&6&l]'
+      build: true
+      suffix: ''
+  Head-Moderator:
+    default: false
+    permissions:
+    - Build:true
+    - essentials.bal
+    - essentials.balance
+    - essentials.baltop
+    - essentials.ban
+    - essentials.build
+    - essentials.er
+    - essentials.fly
+    - essentials.gamemode
+    - essentials.give
+    - essentials.gm
+    - essentials.help
+    - essentials.home
+    - essentials.kick
+    - essentials.mail
+    - essentials.money
+    - essentials.msg
+    - essentials.mute
+    - essentials.pardon
+    - essentials.r
+    - essentials.sethome
+    - essentials.spawn
+    - essentials.speed
+    - essentials.t
+    - essentials.tell
+    - essentials.tempban
+    - essentials.tp
+    - essentials.tpa
+    - essentials.tpo
+    - essentials.unban
+    - essentials.w
+    - essentials.warp
+    - essentials.warps
+    inheritance:
+    - moderator
+    - g:groupmanager_moderator
+    info:
+      Build: true
+      prefix: '&0&l[&8&lHead-&9&lModerator&0&l] &9&l'
+      'Build:': true
+      build: true
+      suffix: ''
+  Something:
+    default: false
+    permissions: []
+    inheritance: []
+    info:
+      prefix: ''
+      build: false
+      suffix: ''
+  Builder:
+    default: false
+    permissions:
+    - essentials.*
+    - essentials.br
+    - essentials.brush
+    - essentials.cyl
+    - essentials.drain
+    - essentials.hcyl
+    - essentials.help
+    - essentials.set
+    - essentials.wand
+    inheritance:
+    - head-moderator
+    - admin
+    - head-admin
+    info:
+      prefix: '&0&l[&a&lBuilder&0&l] &a&l'
+      build: false
+      suffix: ''
+  Moderator:
+    default: false
+    permissions:
+    - essential.speed
+    - essentials.feed
+    - essentials.fix
+    - essentials.gamemode
+    - essentials.give
+    - essentials.heal
+    - essentials.i
+    - essentials.pardon
+    - essentials.repair
+    - essentials.speed
+    - serversigns.use
+    inheritance:
+    - member
+    - g:bukkit_moderator
+    - g:essentials_moderator
+    - g:towny_moderator
+    - g:vanish_moderator
+    info:
+      prefix: '&0&l[&9&lModerator&0&l] &9'
+      build: true
+      suffix: ''
+  Head-Admin:
+    default: false
+    permissions:
+    - essentials.help
+    - worldedit.*
+    inheritance:
+    - admin
+    - g:groupmanager_admin
+    info:
+      prefix: '&6&l[&8&lHead-&4&lAdmin&6&l] &4&l&o'
+      build: true
+      suffix: ''
+  VIPLapislazuli:
+    default: false
+    permissions:
+    - +essentials.signs.use.heal
+    - essentials.balance.others
+    - essentials.ban.notify
+    - essentials.book
+    - essentials.book.title
+    - essentials.chat.color
+    - essentials.chat.url
+    - essentials.compass
+    - essentials.depth
+    - essentials.getpos
+    - essentials.kick.notify
+    - essentials.me
+    - essentials.msg.color
+    - essentials.mute.notify
+    - essentials.nick
+    - essentials.ptime
+    - essentials.realname
+    - essentials.sethome.multiple.4
+    - essentials.signs.break.mail
+    - essentials.signs.break.trade
+    - essentials.signs.create.mail
+    - essentials.signs.create.trade
+    - essentials.time
+    - essentials.whois
+    - essentials.worth
+    - serversigns.use
+    - warps.sheepcowcar
+    inheritance:
+    - g:essentials_builder
+    - g:towny_builder
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&a&lV.&b&lI.&c&lP. &1'
+      build: true
+      suffix: ' &r&1&l(Lapislazuli)'
+  CoalVIP:
+    default: false
+    permissions:
+    - essentials.feed
+    - essentials.fly
+    - essentials.heal
+    - essentials.workbench
+    - warps.pigcar
+    inheritance:
+    - member
+    info:
+      prefix: '&a&lV.&b&lI.&c&lP. &c&l&0&lCoal &7'
+      build: true
+      suffix: ''
