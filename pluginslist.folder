@@ -1,0 +1,22 @@
+#Please write plugins (for new downloadlinks, too) names in here and if you're removing one's plugins folder dont delete the plugin from here if not deinstalled; then remove it just here and keep the folder!!!
+#add comments for the plugins using  #usrname: <text>/
+
+Buycraft.jar
+CoreProtect_2.10.0.jar
+Essentials.jar
+EssentialsChat.jar
+EssentialsGroupManager.jar
+EssentialsProtect.jar
+EssentialsSpawn.jar
+HolographicDisplays.jar
+InfiniteBlocks.jar
+IslandWorld.jar
+MarryMe.jar
+OITC.jar
+Paintballv1.2.9.jar
+PlotMe.jar
+ServerSigns.jar
+VersionIgnore.jar #chess: doesnt work well right now (is rewritten one)/
+WorldEdit.jar
+WorldGuard.jar
+multiworld.jar
